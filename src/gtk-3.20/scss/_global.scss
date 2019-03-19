@@ -2,23 +2,30 @@
 
 @import "functions";
 
+$tailwind_grey_black: #22292F;
+$tailwind_grey_darkest: #3D4852;
+$tailwind_grey_lighter: #F1F5F8;
+$tailwind_grey_lightest: #F8FAFC;
+$tailwind_grey_white: #ffffff;
+$tailwind_orange_dark: #DE751F;
+
 // default color scheme
-$bg_color: if($variant == "dark", #444, #dedede);
-$fg_color: if($variant == "dark", #ddd, #555);
-$base_color: if($variant == "dark", #333, #fff);
-$text_color: if($variant == "dark", #eee, #333);
-$selected_bg_color: #f0544c;
-$selected_fg_color: #fff;
-$tooltip_bg_color: #444;
-$tooltip_fg_color: #eee;
+$bg_color: $tailwind_grey_black;
+$fg_color: $tailwind_grey_lightest;
+$base_color: $tailwind_grey_black;
+$text_color: $tailwind_grey_lightest;
+$selected_bg_color: $tailwind_grey_darkest;
+$selected_fg_color: $tailwind_grey_white;
+$tooltip_bg_color: $tailwind_grey_darkest;
+$tooltip_fg_color: $tailwind_grey_white;
 
 $selected_borders_color: if($variant == 'light', darken($selected_bg_color, 30%), darken($selected_bg_color, 20%));
 $borders_color: if($variant == 'light', shade($bg_color, .85), shade($bg_color, .88));
 $borders_edge: if($variant == 'light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
 
 // dark colors
-$dark_bg_color: #444;
-$dark_fg_color: #eee;
+$dark_bg_color: $tailwind_grey_black;
+$dark_fg_color: $tailwind_grey_lightest;
 
 // shadows
 $dark_shadow: #000;
@@ -46,17 +53,17 @@ $switch_slider_bg_color: #fbfbfb;
 
 // misc colors used by gtk+
 $info_fg_color: #fff;
-$info_bg_color: #03a9f4;
+$info_bg_color: #2779BD;
 $warning_fg_color: #fff;
-$warning_bg_color: #ef6c00;
+$warning_bg_color: #DE751F;
 $question_fg_color: #fff;
-$question_bg_color: #673ab7;
+$question_bg_color: #38A89D;
 $error_fg_color: #fff;
-$error_bg_color: #f44336;
-$link_color: #fc6f5d;
-$success_color: #4caf50;
-$warning_color: #ef6c00;
-$error_color: #f44336;
+$error_bg_color: #CC1F1A;
+$link_color: #DE751F;
+$success_color: #1F9D55;
+$warning_color: #DE751F;
+$error_color: #CC1F1A;
 
 $toolbar_bg_color: $bg_color;
 $toolbar_fg_color: $fg_color;
